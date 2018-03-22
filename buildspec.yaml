@@ -16,6 +16,6 @@ phases:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
       - docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/javaapp:latest
-      - echo '{"name":"javaapp","image":"$AWS_ACCOUNT_ID.dkr.ecr.REGION.amazonaws.com/javaapp:latest"} > imagedefintion.json
+      - echo '{"name":"javaapp","image":"$AWS_ACCOUNT_ID.dkr.ecr.REGION.amazonaws.com/javaapp:latest"}' > imagedefintion.json
 
 

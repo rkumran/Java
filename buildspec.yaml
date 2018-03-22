@@ -19,7 +19,7 @@ phases:
       #- echo '{"name":"javaapp","image":"$AWS_ACCOUNT_ID.dkr.ecr.REGION.amazonaws.com/javaapp:latest"}' > imagedefintion.json
       - echo printf '[{"name":"hello-world","imageUri":"%s"}]'$AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/javaapp:latest > imagedefinitions.json
 artifacts:
-  files:imagedefinitions.json
+  files: imagedefinitions.json
 
 
 
